@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>News Website</title>
+  <!-- custom css link -->
+  <link rel="stylesheet" href="./style.css">
+
+  <!-- font osm link -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&amp;display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/5f092a7ab8.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <header>
+    <!-- Add your website logo and navigation menu here -->
+    <nav>
+      <div class="main-nav">
+        <div class="left-div">
+          <span class="f1">News</span>
+          <span class="f2">Corner</span>
+        </div>
+        <div class="right-div">
+          <span><a href="#">News</a></span>
+          <span><a href="./blog.html">Blog</a></span>
+          <span><img src="https://news-corner.netlify.app/images/profile.png"
+              style="height: 40px; width: 40px; border-radius: 50%;" alt="img logo"></span>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <hr>
+  <!-- NAV SECTION CODE END HERE  -->
+
+
+  <!-- main section code start -->
+  <main>
+    <a href="#" id="brNews">Breaking News</a>
+    <a href="#" id="regularNews">Regular News</a>
+    <a href="#" id="irnNews">International News</a>
+    <a href="#" id="sportsNews">Sports</a>
+    <a href="#" id="entertainment">Entertainment</a>
+    <a href="#" id="cultureNews">Culture</a>
+    <a href="#" id="artNews">Arts</a>
+    <a href="#" id="allNews">All News</a>
+  </main>
+  <!-- conde end for main heading -->
+
+  <!-- code for news container -->
+  <p id="title"></p>
+  <div id="news-container"> </div>
+  <!-- code end for news container -->
+
+
+  <!-- HTML Structure for the pop-up -->
+  <div id="popup" class="popup">
+    <div class="popup-content">
+      <img id="popup-author-img" class="popup-author-img" src="" alt="Author Image">
+      <h2 id="popup-title"></h2>
+      <p id="popup-details"></p>
+      <p id="popup-author-name"></p>
+      <p id="popup-date"></p>
+      <div id="popup-rating" class="popup-rating">
+        <span id="popup-rating-value" class="popup-rating-value"></span>
+        <span id="popup-rating-quality" class="popup-rating-quality"></span>
+      </div>
+      <p id="popup-total-view"></p>
+      <hr>
+      <br>
+      <button class="close" style="text-align: bottom;" onclick="closePopup()">Close</button>
+    </div>
+  </div>
+
+  <script src="./index.js"></script>
+</body>
+
+</html>

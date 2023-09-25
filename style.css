@@ -1,0 +1,229 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #e9e9e9;
+  font-family: 'Poppins', sans-serif;
+}
+
+.left-div,
+.right-div>a {
+  cursor: pointer;
+}
+
+
+a {
+  text-decoration: none;
+  margin-top: .3rem;
+  padding: .7em;
+  /* border: 1px solid blue; */
+
+}
+
+a:hover {
+  /* padding: 1em; */
+  /* border: 1px solid blue; */
+  text-decoration: underline;
+
+}
+
+#title {
+  display: none;
+  margin-bottom: 15px;
+  background-color: white;
+  width: 79%;
+  padding: 1.2rem;
+  margin-left: 9rem;
+  border-radius: 5px;
+}
+
+nav {
+  display: flex;
+  width: 100vw;
+  flex-wrap: wrap;
+  /* border: 1px solid black ; */
+  justify-content: center;
+}
+
+.main-nav {
+  display: flex;
+  width: 80%;
+  /* flex-wrap: wrap; */
+}
+
+.left-div {
+  margin-top: .3em;
+  width: 50%;
+  padding: 1rem;
+  /* border: 1px solid black; */
+}
+
+.right-div {
+  width: 50%;
+  padding: 1rem;
+
+  /* border: 1px solid rgb(190, 14, 14); */
+  display: flex;
+  justify-content: end;
+  gap: 1em;
+  margin-right: 1rem;
+}
+
+.f1 {
+  background-color: rgb(21, 185, 250);
+  padding: .2em .7em;
+  /* padding-right: 10px; */
+  font-weight: 900;
+  font-size: 22px;
+  border-bottom-left-radius: 10px;
+  border-top-left-radius: 10px;
+  /* border: 1px solid black; */
+  outline: none;
+}
+
+.f2 {
+  background-color: white;
+  margin-left: -.5em;
+  padding: .2em .4em;
+  font-weight: 900;
+  /* border: .1px solid black; */
+
+  font-size: 22px;
+  border-bottom-right-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.right-div>span>a {
+  text-decoration: none;
+  color: black;
+}
+
+.right-div>span>a:hover {
+  color: blue;
+
+}
+
+main {
+  /* margin-top: 25px; */
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  gap: 35px;
+}
+
+main>a {
+  text-decoration: none;
+  color: black;
+  padding: .4rem;
+  font-size: 17px;
+}
+
+main>a:hover {
+  color: blue;
+  background-color: #b7babd;
+  border-radius: 5px;
+  text-decoration: none;
+  border: none;
+}
+
+i {
+  margin-right: 5px;
+}
+
+#news-container {
+  margin: 2em 9em;
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 10px;
+  align-items: left;
+  /* border: 1px solid black; */
+  display: block;
+}
+
+#news-container>p {
+  padding: 1rem;
+}
+
+h3 {
+  margin: 10px 0px 10px 35px;
+}
+
+p {
+  font-size: 14px;
+  margin: 19px 35px 10px 35px;
+}
+
+/* Pop-up styles */
+.popup {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 1;
+}
+
+.popup-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  max-width: 80%;
+  max-height: 85%;
+  overflow-y: auto;
+}
+
+.close {
+  position: absolute;
+  bottom: -2.4em;
+  right: 20px;
+  padding: 10px;
+  cursor: pointer;
+  width: 80px;
+  border: none;
+  font-size: 16px;
+  border-radius: 5px;
+  background-color: gray;
+  color: white;
+  padding: .7rem;
+  ;
+}
+
+/* Other styles remain the same */
+span>a:hover {
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 768px) {
+  /* Adjust styles for screens up to 768px width */
+  .left-div,
+  .right-div {
+    width: 100%;
+  }
+
+  .f1,
+  .f2 {
+    font-size: 18px;
+  }
+
+  main {
+    gap: 20px;
+  }
+
+  h3,
+  p {
+    margin-left: 0;
+  }
+}
